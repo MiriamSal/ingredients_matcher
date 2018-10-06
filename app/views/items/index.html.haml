@@ -1,3 +1,5 @@
+%link{:href => "https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css", :rel => "stylesheet"}/
+
 %h1 Ingredients Matcher
 %p Select some items and we'll give you some recipes
 
@@ -6,6 +8,7 @@
 - @items.each do |item|
     %div.item-tile{id: dom_id(item)}
     %p= item.name
+    
 
 - @recipes.each do |recipe|
     %p= recipe["title"]
